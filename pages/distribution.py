@@ -36,10 +36,10 @@ color_mode_switch =  html.Span(
 
 layout = dbc.Container(
     [
-        html.Div(["Bootstrap Light Dark Color Modes Demo"], className="bg-primary text-white h3 p-2"),
+        html.Div("la distribution"),
         color_mode_switch,
         dcc.Graph(id="graph", className="border"),
-        
+        dcc.Graph(id="graph2", className="border"),
     ]
 
 )
@@ -49,6 +49,7 @@ layout = dbc.Container(
     Input("switch", "value"),
     
 )
+
 def update_figure_template(switch_on):
     template = "minty" if switch_on else "minty_dark"
     fig = px.scatter(
@@ -66,7 +67,28 @@ def update_figure_template(switch_on):
     )
     return fig
 
+@callback(
+    Output("graph2", "figure"),
+    Input("switch", "value"),
 
+)
+
+def update_figure_template2(switch_on):
+    template = "minty" if switch_on else "minty_dark"
+    fig2 = px.scatter(
+        df,
+        x="International Student",
+        y=df.index,
+        size="International Student",
+        color="continent",
+        symbol="continent",
+        hover_name="Name of University",
+        hover_data="Location",
+        log_x=True,
+        size_max=40,
+        template=template,
+    )
+    return fig2
 
 clientside_callback(
     """

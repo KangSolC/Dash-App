@@ -10,7 +10,7 @@ from dash_bootstrap_templates import load_figure_template
 load_figure_template(["minty", "minty_dark"])
 
 
-df = pd.read_csv('data\Top_200_univs.csv', delimiter=';')
+df = pd.read_csv('.\data\Top_200_univs.csv', delimiter=';')
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWESOME], suppress_callback_exceptions=True)
 layout= dbc.Container(
     [
