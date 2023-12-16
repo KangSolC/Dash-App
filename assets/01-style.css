@@ -1,0 +1,31 @@
+.content{
+    width: 100%;
+   
+    }
+    
+   
+   .right_content{
+    width:85%;
+    position:absolute;
+    top: 0;
+    right: 0; 
+    }
+   
+    .top_metrics {
+        background: #EAEAEA;
+        height: 200px;
+        width:100%;
+        position:relative;
+        top: 0;
+        right: 0;
+        }
+   
+   .left_menu {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #2A3F54;
+   }

@@ -1,0 +1,200 @@
+University Rank;Name of University;Location;No of student;International Student;Research Score;Teaching Score
+1;University of Oxford;United Kingdom;20965;0.42;99.7;92.3
+2;Harvard University;United States;21887;0.25;99.0;94.8
+3;University of Cambridge;United Kingdom;20185;0.39;99.5;90.9
+3;Stanford University;United States;16164;0.24;96.7;94.2
+5;Massachusetts Institute of Technology;United States;11415;0.33;93.6;90.7
+6;California Institute of Technology;United States;2237;0.34;97.0;90.9
+7;Princeton University;United States;8279;0.23;95.9;87.6
+8;University of California, Berkeley;United States;40921;0.24;95.8;86.4
+9;Yale University;United States;13482;0.21;92.7;92.6
+10;Imperial College London;United Kingdom;18545;0.61;90.8;82.8
+11;Columbia University;United States;21781;0.38;87.7;89.4
+11;ETH Zurich;Switzerland;21665;0.41;95.4;82.6
+13;The University of Chicago;United States;15366;0.36;88.8;86.5
+14;University of Pennsylvania;United States;21453;0.23;88.8;86.0
+15;Johns Hopkins University;United States;17584;0.29;91.5;79.4
+16;Tsinghua University;China;38324;0.1;97.4;90.1
+17;Peking University;China;31994;0.19;96.7;92.5
+18;University of Toronto;Canada;77468;0.26;93.3;77.3
+19;National University of Singapore;Singapore;32337;0.25;93.0;76.4
+20;Cornell University;United States;24027;0.26;86.1;80.2
+21;University of California, Los Angeles;United States;42434;0.16;88.9;80.4
+22;UCL;United Kingdom;36790;0.6;85.4;74.5
+23;University of Michigan-Ann Arbor;United States;45912;0.17;84.6;79.3
+24;New York University;United States;36337;0.42;84.0;74.2
+25;Duke University;United States;16091;0.24;76.2;78.1
+26;Northwestern University;United States;19175;0.2;80.7;71.7
+26;University of Washington;United States;47727;0.18;82.8;71.6
+28;Carnegie Mellon University;United States;14305;0.47;81.8;65.4
+29;University of Edinburgh;United Kingdom;32845;0.47;74.5;66.9
+30;Technical University of Munich;Germany;33960;0.36;82.2;69.8
+31;University of Hong Kong;Hong Kong;18087;0.43;74.1;65.6
+32;University of California, San Diego;United States;37030;0.28;77.2;60.2
+33;LMU Munich;Germany;35003;0.19;78.3;67.3
+34;University of Melbourne;Australia;49588;0.47;75.9;67.1
+35;King’s College London;United Kingdom;28965;0.52;72.9;58.0
+36;Nanyang Technological University, Singapore;Singapore;24651;0.25;77.9;60.9
+37;London School of Economics and Political Science;United Kingdom;11120;0.73;74.3;59.2
+38;Georgia Institute of Technology;United States;28826;0.4;75.9;60.2
+39;The University of Tokyo;Japan;26112;0.15;91.4;88.1
+40;University of British Columbia;Canada;56452;0.34;73.1;62.9
+41;École Polytechnique Fédérale de Lausanne;Switzerland;11641;0.62;70.7;65.6
+42;KU Leuven;Belgium;47663;0.18;74.9;59.7
+43;Universität Heidelberg;Germany;19347;0.21;61.5;67.2
+44;Monash University;Australia;58725;0.41;68.7;56.9
+45;Chinese University of Hong Kong;Hong Kong;18468;0.21;61.1;59.1
+46;McGill University;Canada;32309;0.3;72.4;62.0
+47;Paris Sciences et Lettres – PSL Research University Paris;France;16218;0.22;73.5;68.2
+48;University of Illinois at Urbana-Champaign;United States;48674;0.22;78.9;67.1
+49;Karolinska Institute;Sweden;8021;0.27;68.8;51.1
+50;University of Texas at Austin;United States;49171;0.1;73.1;66.2
+51;Fudan University;China;36318;0.09;75.8;71.8
+52;Shanghai Jiao Tong University;China;37478;0.08;82.9;75.3
+53;The University of Queensland;Australia;41372;0.41;66.5;55.9
+54;University of Manchester;United Kingdom;37035;0.44;63.7;54.5
+54;The University of Sydney;Australia;45853;0.45;65.8;53.1
+56;Seoul National University;South Korea;26209;0.1;76.2;75.2
+57;Washington University in St Louis;United States;14420;0.24;56.8;60.3
+58;The Hong Kong University of Science and Technology;Hong Kong;9864;0.32;63.4;51.4
+59;Wageningen University & Research;Netherlands;15404;0.27;60.2;50.4
+60;University of Amsterdam;Netherlands;29157;0.32;64.1;48.0
+61;Brown University;United States;10037;0.21;58.0;64.5
+62;Australian National University;Australia;16758;0.51;69.2;51.3
+63;University of California, Davis;United States;37639;0.18;66.3;59.7
+64;University of California, Santa Barbara;United States;25860;0.2;61.5;44.6
+65;University of Southern California;United States;40549;0.22;58.6;58.9
+66;Utrecht University;Netherlands;32532;0.13;66.0;44.3
+67;Zhejiang University;China;46124;0.16;74.8;67.3
+68;Kyoto University;Japan;22269;0.12;79.1;77.5
+69;University of North Carolina at Chapel Hill;United States;31080;0.08;59.7;58.9
+70;Delft University of Technology;Netherlands;20299;0.31;76.4;58.8
+71;Boston University;United States;27243;0.31;56.1;55.9
+71;UNSW Sydney;Australia;45133;0.4;59.0;51.1
+73;Charité - Universitätsmedizin Berlin;Germany;8429;0.21;52.2;48.5
+74;University of Science and Technology of China;China;18573;0.06;64.9;65.0
+75;University of Groningen;Netherlands;30009;0.28;57.6;45.4
+76;University of Bristol;United Kingdom;25680;0.31;53.4;43.8
+77;Leiden University;Netherlands;33648;0.2;64.4;43.2
+78;Yonsei University (Seoul campus);South Korea;19481;0.17;68.9;67.0
+79;Hong Kong Polytechnic University;Hong Kong;19046;0.3;57.0;46.6
+80;Erasmus University Rotterdam;Netherlands;31668;0.22;57.1;38.6
+81;University of Wisconsin-Madison;United States;40701;0.14;62.9;59.7
+82;Emory University;United States;13190;0.2;46.0;54.8
+82;University of Glasgow;United Kingdom;28540;0.41;50.8;43.3
+82;University of Zurich;Switzerland;25003;0.22;50.7;51.5
+85;McMaster University;Canada;26403;0.2;51.1;42.7
+86;Humboldt University of Berlin;Germany;34399;0.17;64.3;55.2
+86;University of Tübingen;Germany;20620;0.13;58.2;51.1
+88;University of Adelaide;Australia;23102;0.32;51.8;42.7
+89;University of Bonn;Germany;27210;0.17;56.1;51.6
+90;Sorbonne University;France;41443;0.21;58.3;58.7
+91;Free University of Berlin;Germany;26497;0.23;62.4;54.2
+91;Korea Advanced Institute of Science and Technology (KAIST);South Korea;9946;0.09;66.0;64.5
+93;Université Paris-Saclay;France;44443;0.19;55.2;56.7
+94;University of Bern;Switzerland;11728;0.17;46.5;46.0
+95;University of California, Irvine;United States;36655;0.28;51.6;43.5
+95;Institut Polytechnique de Paris;France;5999;0.41;58.8;58.5
+95;Nanjing University;China;36426;0.08;58.2;58.4
+98;Vanderbilt University;United States;12696;0.15;47.5;49.5
+99;City University of Hong Kong;Hong Kong;9099;0.62;53.0;47.2
+99;RWTH Aachen University;Germany;39738;0.28;64.5;56.8
+101;University of Basel;Switzerland;8632;0.3;44.1;47.0
+101;King Abdulaziz University;Saudi Arabia;31545;0.22;36.7;51.7
+101;University of Minnesota;United States;61009;0.1;56.9;55.1
+104;University of Maryland, College Park;United States;33775;0.11;57.7;48.1
+104;University of Warwick;United Kingdom;23230;0.44;49.6;44.8
+106;Michigan State University;United States;45465;0.13;55.6;56.2
+107;Ghent University;Belgium;39437;0.12;60.1;48.6
+108;University of Birmingham;United Kingdom;31820;0.34;46.2;40.5
+108;University of Southampton;United Kingdom;21175;0.39;47.5;41.4
+110;University of Helsinki;Finland;23059;0.05;58.5;45.9
+111;University of Montreal;Canada;38189;0.22;53.2;50.9
+112;Ohio State University (Main campus);United States;55814;0.13;51.2;53.0
+113;University of Freiburg;Germany;20253;0.17;52.8;47.8
+114;University of Copenhagen;Denmark;31519;0.16;47.5;45.1
+114;Université Paris Cité;France;62747;0.19;44.8;51.5
+114;University of Sheffield;United Kingdom;27465;0.41;46.4;43.6
+117;Aarhus University;Denmark;26475;0.1;60.0;40.6
+118;University of Alberta;Canada;32338;0.28;52.7;48.8
+119;University of Göttingen;Germany;30221;0.14;53.8;46.3
+119;Lund University;Sweden;28545;0.18;55.5;40.5
+121;Vrije Universiteit Amsterdam;Netherlands;29796;0.16;52.2;38.4
+122;Lancaster University;United Kingdom;14380;0.39;40.0;38.7
+123;Dartmouth College;United States;6440;0.15;40.4;59.8
+124;Queen Mary University of London;United Kingdom;20505;0.46;41.3;34.3
+124;University of Vienna;Austria;35929;0.29;59.3;49.4
+126;University of Oslo;Norway;21548;0.15;48.5;40.1
+127;Purdue University West Lafayette;United States;44551;0.2;64.2;55.9
+128;University of Hamburg;Germany;30676;0.12;54.4;46.5
+128;University of Leeds;United Kingdom;33990;0.36;47.8;46.0
+130;University of Nottingham;United Kingdom;32875;0.31;44.1;41.8
+131;University of Antwerp;Belgium;15857;0.17;46.2;36.4
+131;The University of Western Australia;Australia;18405;0.28;48.1;34.9
+133;University of Technology Sydney;Australia;27481;0.31;42.1;36.9
+134;Case Western Reserve University;United States;10934;0.2;40.6;48.4
+135;University of Lausanne;Switzerland;13401;0.23;47.6;35.8
+136;Georgetown University;United States;16074;0.19;35.0;55.5
+137;University of Exeter;United Kingdom;24165;0.29;41.3;32.4
+137;University of Ottawa;Canada;36670;0.24;45.4;41.7
+139;University of Auckland;New Zealand;33093;0.32;44.3;36.8
+139;Newcastle University;Australia;25590;0.29;40.0;33.3
+139;Radboud University Nijmegen;Netherlands;21979;0.13;51.6;34.9
+139;University of Würzburg;Germany;23754;0.1;45.2;40.7
+139;University of York;United Kingdom;17665;0.28;44.0;39.3
+144;University of Pittsburgh-Pittsburgh campus;United States;26575;0.11;42.9;46.2
+145;Maastricht University;Netherlands;19909;0.56;49.6;38.4
+146;University of Cologne;Germany;33341;0.16;46.5;44.5
+147;Rice University;United States;7068;0.28;39.7;46.5
+148;University of Colorado Boulder;United States;34928;0.08;46.3;45.6
+148;Ulm University;Germany;10271;0.13;41.2;41.6
+148;Uppsala University;Sweden;25548;0.17;55.7;37.6
+151;University of Florida;United States;46807;0.08;58.7;55.0
+151;Penn State (Main campus);United States;46863;0.16;53.8;47.8
+151;Tufts University;United States;11399;0.16;36.7;47.1
+154;University of Rochester;United States;10364;0.36;40.5;42.0
+155;KTH Royal Institute of Technology;Sweden;13329;0.2;53.8;43.5
+156;Arizona State University (Tempe);USA;50027;0.17;47.9;44.8
+156;Technical University of Berlin;Germany;20243;0.27;55.7;48.8
+156;TU Dresden;Germany;30382;0.16;50.7;48.8
+156;University of Virginia (Main campus);United States;25810;0.13;39.8;48.1
+160;University of Cape Town;South Africa;21069;0.15;43.8;33.9
+161;University of Bologna;Italy;69831;0.12;40.8;52.1
+161;Trinity College Dublin;Germany;17764;0.28;47.3;36.0
+163;University of Leicester;United Kingdom;14650;0.34;32.9;31.4
+163;Pohang University of Science and Technology (POSTECH);South Korea;3260;0.03;51.4;54.7
+166;Southern University of Science and Technology (SUSTech);China;5137;0.01;42.9;29.8
+166;Technical University of Denmark;Denmark;9599;0.26;44.9;40.4
+168;Medical University of Graz;Austria;3722;0.27;34.4;29.4
+168;Northeastern University, US;United States;21211;0.36;30.2;39.9
+170;Indiana University;United States;66637;0.13;39.4;45.5
+170;Université Catholique de Louvain;Belgium;24523;0.2;50.4;39.9
+170;Sungkyunkwan University (SKKU);South Korea;23399;0.18;54.0;52.8
+173;Wuhan University;China;55412;0.06;40.5;43.5
+174;Ulsan National Institute of Science and Technology (UNIST);South Korea;3896;0.09;42.0;41.3
+175;Macquarie University;Australia;30561;0.27;44.6;38.7
+176;Huazhong University of Science and Technology;China;57167;0.04;42.6;42.2
+176;University of Liverpool;United Kingdom;26350;0.36;37.7;33.2
+176;Stockholm University;Sweden;30365;0.07;50.4;29.7
+179;University of Mannheim;Germany;7684;0.13;48.2;40.0
+180;University of Arizona;United States;39797;0.09;47.0;45.8
+181;Texas A&M University;United States;62931;0.08;54.8;50.2
+182;University of Barcelona;Spain;45004;0.11;43.4;33.1
+183;Autonomous University of Barcelona;Spain;31933;0.16;38.8;35.1
+183;Scuola Normale Superiore di Pisa;Italy;629;0.13;36.5;56.7
+185;University of Münster;Germany;28014;0.07;43.9;43.4
+186;Pompeu Fabra University;Spain;11965;0.13;39.4;32.6
+187;Cardiff University;United Kingdom;27105;0.28;38.9;31.1
+187;National Taiwan University (NTU);Taiwan;25215;0.11;55.5;50.2
+189;Friedrich Schiller University Jena;Germany;16446;0.14;39.9;42.4
+189;Karlsruhe Institute of Technology;Germany;22673;0.2;54.2;46.7
+191;University of Massachusetts;United States;63338;0.14;33.5;41.2
+192;University of Aberdeen;United Kingdom;13205;0.44;34.1;30.7
+192;University of California, Santa Cruz;United States;19266;0.14;33.3;32.6
+194;Medical University of Vienna;Austria;7274;0.33;27.6;35.0
+194;University of Miami;United States;17009;0.16;33.5;48.4
+196;University of Erlangen-Nuremberg;Germany;30303;0.13;47.5;44.6
+196;Sichuan University;China;49543;0.06;58.6;57.1
+198;Durham University;United Kingdom;18425;0.35;44.6;40.0
+198;Queen’s University Belfast;United Kingdom;19060;0.39;37.9;31.1
+198;University of Reading;United Kingdom;15720;0.32;39.6;36.5

@@ -1,0 +1,63 @@
+from dash import Dash, html, dcc, Input, Output, clientside_callback
+import dash
+import dash_bootstrap_components as dbc
+
+from dash_bootstrap_templates import load_figure_template
+load_figure_template(["minty", "minty_dark"])
+app = Dash(__name__, external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWESOME])
+layout =dbc.Container([ 
+   html.Br(),
+    dbc.Row([
+        dbc.Col([
+    html.Div(
+            className="content",
+            children=[
+                html.H2("Les 200 meilleures universités du monde en 2023",style={'textAlign': 'center','font-weight':'bold','padding':'5px'}),
+                html.H4("Un projet réalisé par 3 étudiantes du master TIW à l'UCBL dans le cadre du module Analyse de Données"),
+                html.P("Ceci est un projet réalisé par 3 étudiantes du master TIW à l'UCBL dans le cadre du module\
+                        Analyse de Données en utilisant le module [DASH] alors allons découvrir qu'elle est la meilleure \
+                       universités selon le classemnt choisissez ce que vous voulez depuis la barre de navigation"),])
+                ],width=13),
+                       ],justify="center"),
+                            
+    dbc.Row([
+        dbc.Col([
+dbc.Carousel(
+    items=[
+        {"key": "1","header":"Claude Bernard-Lyon1 University", "src": "./assets/Doua.jpg","img_style":{"height":"700px"}},
+        {"key": "2","header":"Harvard University", "src": "./assets/harvard.jpg","img_style":{"height":"700px"}},
+        {"key": "3", "header":"Hogwarts University","src": "./assets/hogwarts.jpg","img_style":{"height":"700px"}},
+    ],
+    controls=False,
+    indicators=True,
+    interval=2000,
+    ride="carousel",
+)
+
+        ],width=13)
+    ],justify="center"),
+
+     dbc.Row([
+        dbc.Col([
+    html.Div(
+            className="content",
+            children=[
+                dcc.Markdown('''
+                _**N'attendez pas plus !! allons appliquer une analyse sur les meilleures universités au monde**_ 
+                * L'onglet **Data** vous ammenera au jeu de données traité
+                * L'onglet **Distribution** vous présentera des graphes de distribution entre différents attributs du jeu de données
+                * L'onglet **Clustering** vous montrera comment les meilleures universités du monde en fait peuvent être réparties en des _groupes_
+                ''',style={'padding':'5px','margin-bottom':'20px','margin-top':'20px'})
+                ])
+                ],width=13),
+                       ],justify="center"),
+    
+            ]
+            
+                
+        )
+       
+    
+
+
+
