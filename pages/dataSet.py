@@ -9,16 +9,18 @@ load_figure_template(["minty", "minty_dark"])
 
 
 df = pd.read_csv('./data/Top_200_univs.csv', delimiter=';')
-df = pd.read_csv('.\data\Top_200_univs.csv', delimiter=';')
+#df = pd.read_csv('.\data\Top_200_univs.csv', delimiter=';')
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWESOME], suppress_callback_exceptions=True)
 layout= dbc.Container(
     [
+        html.H1("Jeu de données",className="content"),
         dcc.Markdown(
             '''
-            # Jeu de données
-            Voici les **[données](https://www.kaggle.com/datasets/alitaqi000/world-university-rankings-2023)** suite à leur traitement de notre part :
+           
+            Voici les nouvelles **[données](https://www.kaggle.com/datasets/alitaqi000/world-university-rankings-2023)** suite à leur traitement de notre part :
             ''',
-            style={'padding':'5px'},
+            className="content",
+           
             dangerously_allow_html=True
         ),
 
@@ -30,5 +32,6 @@ layout= dbc.Container(
             responsive=True,
             striped=True,
         ),
+        
     ]
 )
