@@ -25,26 +25,29 @@ navbar = dbc.NavbarSimple(
 )
 
 # Footer
-gitlab_url = "https://forge.univ-lyon1.fr/p1908025/ad-projet-2024"
+project_url = "https://github.com/KangSolC/Dash-App"
 
 footer_style = {
-    'border-top': '1px solid #ccc',
+    #'border-top': '1px solid #ccc',
     'display': 'flex',
     'align-items': 'center',
     'justify-content': 'space-between',
-    'padding': '1rem'
+    'padding': '8px',
+    'color':' #176B87',
+    'background-color':'#FAF7F0'
+    
 }
 
 footer= html.Footer(
     children=([
         html.Div([
             html.A([
-                "Accéder au projet Gitlab ",
-                html.I(className="fab fa-gitlab") # Icon Gitlab
+                "Accéder au projet ",
+                html.I(className="fab fa-github") 
             ],
-            href=gitlab_url,
+            href=project_url,
             target="_blank",
-            style={'margin-right':'0'}
+            style={'margin-right':'0','color':'#176B87'}
             )
         ]),
 
