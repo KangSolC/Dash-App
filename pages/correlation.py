@@ -29,7 +29,9 @@ df["Continent"]=df.apply(convert,axis=1)
 matrix = px.scatter_matrix(
     df,
     dimensions=["University Rank", "No of student", "International Student", "Research Score", "Teaching Score"],
-    color="Continent", symbol="Continent"
+    color="Continent",
+    symbol="Continent",
+    labels={"University Rank": "Rank", "No of student": "Nb stdts*", "International Student": "Intl stdts*", "Research Score": "Research", "Teaching Score": "Teaching"}
 )
 matrix.update_traces(diagonal_visible=False)
 
@@ -39,6 +41,8 @@ layout= dbc.Container(
         html.H3("Matrice de corrélation",className="content"),
         dcc.Markdown(correlation_matrix.to_markdown(), className='correlation-table'),
         html.H3("Matrice de dispersion", style={'margin-top': '2rem'},className="content"),
+        html.Div("*Nb stdts = Number of students"),
+        html.Div("*Intl stdts = International students"),
         dcc.Graph(
             id='corr-matrix',
             figure=matrix
