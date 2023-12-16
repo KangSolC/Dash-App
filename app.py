@@ -2,7 +2,7 @@ from dash import Dash, html, dcc, Input, Output, clientside_callback
 import dash
 import dash_bootstrap_components as dbc
 from pages import home, dataSet, distribution, correlation, clustering
-import navbar
+
 from dash_bootstrap_templates import load_figure_template
 load_figure_template(["minty", "minty_dark"])
 app = Dash(__name__,external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWESOME], suppress_callback_exceptions=True)

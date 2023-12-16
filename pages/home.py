@@ -20,7 +20,7 @@ layout = dbc.Container([
                 className="content",
                 children=[
                     html.H1("Les 200 meilleures universités du monde en 2023", style={'textAlign': 'center','font-weight':'bold','padding':'5px','color':'#176B87'}),
-                    html.P("Ceci est un projet réalisé par 3 étudiantes du master TIW à l'UCBL dans le cadre du module Analyse de Données en utilisant le module [DASH]. Découvrons ensemble quelles sont les meilleures universités en 2023 selon le classement mondial !")
+                    html.P("Ceci est un projet réalisé par 3 étudiantes du master TIW à l'UCBL dans le cadre du module Analyse de Données en utilisant le framework DASH. Découvrons ensemble quelles sont les meilleures universités en 2023 selon le classement mondial !")
                 ])
             ],
             width=13
