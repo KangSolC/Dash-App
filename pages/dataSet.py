@@ -17,7 +17,7 @@ layout= dbc.Container(
             # Jeu de données
             Voici les **[données](https://www.kaggle.com/datasets/alitaqi000/world-university-rankings-2023)** suite à leur traitement de notre part :
             ''',
-            style={'padding':'5px', 'margin-top':'20px'},
+            style={'padding':'5px'},
             dangerously_allow_html=True
         ),
 

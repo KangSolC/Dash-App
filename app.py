@@ -61,7 +61,7 @@ app.layout = html.Div(
     [
         dcc.Location(id="url", refresh=False),
         navbar,
-        dbc.Container(id="page-content", fluid=True),
+        dbc.Container(id="page-content", fluid=True, style={'margin': '20px 0'}),
        
         dash.page_container,
     footer,

@@ -48,7 +48,7 @@ layout = dbc.Container([
                     * L'onglet **Data** montre le jeu de données traité
                     * L'onglet **Distribution** vous présentera des graphes de distribution entre différents attributs du jeu de données
                     * L'onglet **Clustering** vous montrera comment les universités peuvent être réparties en _groupes_
-                    ''',style={'padding':'5px','margin-bottom':'20px','margin-top':'20px'})
+                    ''',style={'padding':'5px','margin-top':'20px'})
                 ])
         ],width=13),
     ],justify="center"),
