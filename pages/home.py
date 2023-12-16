@@ -5,15 +5,21 @@ from dash_bootstrap_templates import load_figure_template
 load_figure_template(["minty", "minty_dark"])
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWESOME])
-
+color_mode_switch =  html.Span(
+    [
+        dbc.Label(className="fa fa-moon", html_for="switch"),
+        dbc.Switch( id="switch", value=False, className="d-inline-block ms-1", persistence=True),
+        dbc.Label(className="fa fa-sun", html_for="switch"),
+    ]
+)
 layout = dbc.Container([
-
+    color_mode_switch,
     dbc.Row([
         dbc.Col([
             html.Div(
                 className="content",
                 children=[
-                    html.H1("Les 200 meilleures universités du monde en 2023", style={'textAlign': 'center','font-weight':'bold','padding':'5px'}),
+                    html.H1("Les 200 meilleures universités du monde en 2023", style={'textAlign': 'center','font-weight':'bold','padding':'5px','color':'#176B87'}),
                     html.P("Ceci est un projet réalisé par 3 étudiantes du master TIW à l'UCBL dans le cadre du module Analyse de Données en utilisant le module [DASH]. Découvrons ensemble quelles sont les meilleures universités en 2023 selon le classement mondial !")
                 ])
             ],
