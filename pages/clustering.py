@@ -48,10 +48,10 @@ layout= dbc.Container(
 
         html.Button('Confirmer', id='valider_button',className='btn btn-info'),
         
-        html.H3("Avec Normalization",className="content",style={'margin-top':'20px'}),
+        html.H3("Avec normalisation de données",className="content",style={'margin-top':'20px'}),
         dcc.Graph(figure={}, id='cluster-with-normalization'),
-        html.H3("Sans Normalization",className="content"),
-        dcc.Graph(figure={}, id='cluster-without-normalization', style={'margin': 'auto'})
+        html.H3("Sans normalisation de données",className="content",style={'margin-top': '20px'}),
+        dcc.Graph(figure={}, id='cluster-without-normalization')
         
     ]
 )
