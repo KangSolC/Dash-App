@@ -2,9 +2,9 @@
 
 ## Étudiantes
 
-- AMAKHZOUN Hajar - p2312644 (hajar.amakhzoun@etu.univ-lyon1.fr)
-- EL GARB Mouna - p2315594 (mouna.el-garb@etu.univ-lyon1.fr)
-- NGUYEN Cécilia - p1908025 (cecilia.nguyen@etu.univ-lyon1.fr)
+- AMAKHZOUN Hajar
+- EL GARB Mouna
+- NGUYEN Cécilia
 
 ## Jeu de données
 
