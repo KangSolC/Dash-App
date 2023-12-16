@@ -20,21 +20,21 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT
 
 layout= dbc.Container(
     [
-        html.H1("Clustering"),
-        html.Div(children='Choose your Clustering Method'),
-        dcc.RadioItems(options = ['K-Means', 'Gaussian Mixtures', 'DBScan'], value='K-Means', id='controls-cluster'),
+        html.H1("Clustering",className="content"),
+        html.H6('Choisissez une méthode de clustering :',className="content"),
+        dcc.RadioItems(options = ['K-Means', 'Gaussian Mixtures', 'DBScan'], value='K-Means', id='controls-cluster',className="content"),
         #Selon le choix de l'utilisateur, on lui demande la valeurs des paramètres de chaque méthode
-        html.Div(id='kmeans-options', children=[
+        html.Div(id='kmeans-options',className="content", children=[
             html.Label('Nombre de Clusters pour K-Means', style={'margin-right': '10px'}),
             dcc.Input(id='nombre-clusters', type='text', value='3', style={'width': '60px'}),
         ], style={'display': 'none'}),  
         
-        html.Div(id='gaussian-options', children=[
+        html.Div(id='gaussian-options',className="content", children=[
             html.Label('Nombre de Composantes pour Gaussian Mixtures', style={'margin-right': '10px'}),
             dcc.Input(id='nombre-gaussian', type='text', value='3', style={'width': '60px'}),
         ], style={'display': 'none'}),  
         
-        html.Div(id='dbscan-eps', children=[
+        html.Div(id='dbscan-eps',className="content", children=[
         html.Label('Epsilon pour DBScan', style={'margin-right': '10px'}),
         dcc.Input(id='eps', type='text', value='0.5', style={'width': '60px'}),
         ], style={'display': 'none', 'margin-bottom': '10px'}),  
@@ -42,15 +42,15 @@ layout= dbc.Container(
         html.Div(children=[]),
 
         html.Div(id='dbscan-nbre-min', children=[
-            html.Label('Nombre minimum d\'échantillons pour DBScan', style={'margin-right': '10px'}),
+            html.Label('Nombre minimum d\'échantillons pour DBScan',className="content", style={'margin-right': '10px'}),
             dcc.Input(id='min-samples', type='text', value='5', style={'width': '60px'}),
         ], style={'display': 'none', 'margin-bottom': '10px'}),  
 
-        html.Button('Confirm', id='valider_button', style={'margin-top': '10px', 'border-radius': '12px','margin-bottom': '20px'}),
+        html.Button('Confirmer', id='valider_button',className='btn btn-info'),
         
-        html.H5("With Normalization"),
-        dcc.Graph(figure={}, id='cluster-with-normalization', style={'margin': 'auto'}),
-        html.H5("Without Normalization"),
+        html.H3("Avec Normalization",className="content",style={'margin-top':'20px'}),
+        dcc.Graph(figure={}, id='cluster-with-normalization'),
+        html.H3("Sans Normalization",className="content"),
         dcc.Graph(figure={}, id='cluster-without-normalization', style={'margin': 'auto'})
         
     ]
@@ -121,11 +121,11 @@ def update_clustering_graph(col_chosen, valider_button, nbre_clusters, nbre_gaus
         clusters_normalized = dbscan.fit_predict(df_normalized)
 
     # Création de Scatter plot pour le graphe Without Normalization
-    fig1, ax1 = plt.subplots(figsize=(15, 4))
+    fig1, ax1 = plt.subplots(figsize=(13, 5))
     sns.scatterplot(data=df, x="No of student", y="Research Score", hue=clusters, palette='deep', ax=ax1)
-
+    
     # Création Scatter plot pour le graphe With Normalization
-    fig2, ax2 = plt.subplots(figsize=(15, 4))
+    fig2, ax2 = plt.subplots(figsize=(13, 5))
     sns.scatterplot(data=df, x="No of student", y="Research Score", hue=clusters_normalized, palette='deep', ax=ax2)
 
     # Convertir en Plotly figures
