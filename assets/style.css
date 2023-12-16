@@ -1,0 +1,32 @@
+.content {
+    width: 100%;
+}
+
+.correlation-table table {
+    border: 1px solid #ccc;
+}
+
+.correlation-table thead {
+    background: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+}
+
+.correlation-table th {
+    padding: 7px;
+    border-left: 1px solid #ccc;
+}
+
+.correlation-table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.correlation-table tr td:first-child {
+    font-weight: bold;
+    border-right: 1px solid #ccc;
+    background: #f1f1f1;
+}
+
+.correlation-table td {
+    padding: 7px;
+    border-right: 1px solid #ccc;
+}
