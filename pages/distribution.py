@@ -4,6 +4,7 @@ import dash_bootstrap_components as dbc
 import dash 
 import pycountry_convert as pc
 import pandas as pd
+from pages import home
 from dash_bootstrap_templates import load_figure_template
 load_figure_template(["minty", "minty_dark"])
 
@@ -21,24 +22,27 @@ df["continent"]=df.apply(convert,axis=1)
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWESOME], suppress_callback_exceptions=True)
 
-color_mode_switch =  html.Span(
-    [
-        dbc.Label(className="fa fa-moon", html_for="switch"),
-        dbc.Switch( id="switch", value=False, className="d-inline-block ms-1", persistence=True),
-        dbc.Label(className="fa fa-sun", html_for="switch"),
-    ]
-)
+
 
 # Graphe de distribution avec les continents
 layout = dbc.Container(
     [
-        html.H1("Graphes de distribution"),
-        color_mode_switch,
-        dcc.Graph(id="graph", className="border"),
-        dcc.Graph(id="graph2", className="border"),
-    ],style={'margin': '2rem 0'}
+        html.H1("Graphes de distribution",className="content"),
+        
+        html.Div(
+            home.color_mode_switch,style={'visibility':'hidden'}),
+        html.H6("Distribution du nombre d'étudiants par rapport au score de recherche avec\
+                 comme taille le nombre d'étudiants internationaux",className="content",style={'margin-top':'-20px'}),
 
+        dcc.Graph(id="graph", className="border"),
+        html.Br(),
+        html.H6("Distribution du nombre d'étudiants internationaux par rapport au rang de l'université avec\
+                 comme taille le nombre total d'étudiants ",className="content"),
+        dcc.Graph(id="graph2", className="border"),
+    ]
 )
+
+
 
 @callback(
     Output("graph", "figure"),
@@ -74,7 +78,7 @@ def update_figure_template2(switch_on):
     fig2 = px.scatter(
         df,
         x="International Student",
-        y=df.index,
+        y="University Rank",
         size="International Student",
         color="continent",
         symbol="continent",
