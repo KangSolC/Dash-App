@@ -1,7 +1,7 @@
 from dash import Dash, html, dcc, Input, Output, clientside_callback
 import dash
 import dash_bootstrap_components as dbc
-from pages import dataSet, distribution,home
+from pages import home, dataSet, distribution, correlation, clustering
 import navbar
 from dash_bootstrap_templates import load_figure_template
 load_figure_template(["minty", "minty_dark"])
@@ -14,6 +14,7 @@ navbar = dbc.NavbarSimple(
         dbc.NavItem(dbc.NavLink("Home", href="/")),
         dbc.NavItem(dbc.NavLink("Data", href="/data")),
         dbc.NavItem(dbc.NavLink("Distribution", href="/distribution")),
+        dbc.NavItem(dbc.NavLink("Correlation", href="/correlation")),
         dbc.NavItem(dbc.NavLink("Clustering", href="/clustering")),
     ],
     brand="Projet d'Analyse de Données / TIW 2023-2024",
@@ -76,6 +77,10 @@ def display_page(pathname):
         return dataSet.layout
     elif pathname == "/distribution":
         return distribution.layout
+    elif pathname == "/correlation":
+        return correlation.layout
+    elif pathname == "/clustering":
+        return clustering.layout
     else:
         return dbc.Jumbotron(
             [
