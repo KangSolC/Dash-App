@@ -28,7 +28,7 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWES
 layout = dbc.Container(
     [
         html.H1("Graphes de distribution",className="content"),
-        html.Div(children='Sélectionnez l\'axe Y'),
+        html.Div(children='Sélectionnez l\'axe Y:'),
         dcc.RadioItems(
             options = {
                 'No of student': 'Nombre des Étudiants',

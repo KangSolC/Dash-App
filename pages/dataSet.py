@@ -17,7 +17,7 @@ layout= dbc.Container(
         dcc.Markdown(
             '''
            
-            Voici les nouvelles **[données](https://www.kaggle.com/datasets/alitaqi000/world-university-rankings-2023)** suite à leur traitement de notre part :
+            Voici notre jeu de données après l'avoir nettoyé et traité de notre part, provenant du jeu de données **[source](https://www.kaggle.com/datasets/alitaqi000/world-university-rankings-2023)** :
             ''',
             className="content",
            

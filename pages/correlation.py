@@ -37,7 +37,7 @@ matrix.update_traces(diagonal_visible=False)
 
 layout= dbc.Container(
     [
-        html.H1("Correlation",className="content"),
+        html.H1("Corrélation",className="content"),
         html.H3("Matrice de corrélation",className="content"),
         dcc.Markdown(correlation_matrix.to_markdown(), className='correlation-table'),
         html.H3("Matrice de dispersion", style={'margin-top': '2rem'},className="content"),

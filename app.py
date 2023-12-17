@@ -2,7 +2,6 @@ from dash import Dash, html, dcc, Input, Output, clientside_callback
 import dash
 import dash_bootstrap_components as dbc
 from pages import home, dataSet, distribution, correlation, clustering
-
 from dash_bootstrap_templates import load_figure_template
 load_figure_template(["minty", "minty_dark"])
 app = Dash(__name__,external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWESOME], suppress_callback_exceptions=True)
@@ -12,7 +11,7 @@ app = Dash(__name__,external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWESO
 navbar = dbc.NavbarSimple(
     children=[
         dbc.NavItem(dbc.NavLink("Home", href="/")),
-        dbc.NavItem(dbc.NavLink("Data", href="/data")),
+        dbc.NavItem(dbc.NavLink("Dataset", href="/data")),
         dbc.NavItem(dbc.NavLink("Distribution", href="/distribution")),
         dbc.NavItem(dbc.NavLink("Correlation", href="/correlation")),
         dbc.NavItem(dbc.NavLink("Clustering", href="/clustering")),
@@ -25,29 +24,26 @@ navbar = dbc.NavbarSimple(
 )
 
 # Footer
-project_url = "https://github.com/KangSolC/Dash-App"
+gitlab_url = "https://forge.univ-lyon1.fr/p1908025/ad-projet-2024"
 
 footer_style = {
-    #'border-top': '1px solid #ccc',
+    'border-top': '1px solid #ccc',
     'display': 'flex',
     'align-items': 'center',
     'justify-content': 'space-between',
-    'padding': '8px',
-    'color':' #176B87',
-    'background-color':'#FAF7F0'
-    
+    'padding': '1rem'
 }
 
 footer= html.Footer(
     children=([
         html.Div([
             html.A([
-                "Accéder au projet ",
-                html.I(className="fab fa-github") 
+                "Accéder au projet Gitlab ",
+                html.I(className="fab fa-gitlab") # Icon Gitlab
             ],
-            href=project_url,
+            href=gitlab_url,
             target="_blank",
-            style={'margin-right':'0','color':'#176B87'}
+            style={'margin-right':'0'}
             )
         ]),
 

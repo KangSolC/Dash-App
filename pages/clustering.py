@@ -24,6 +24,7 @@ layout= dbc.Container(
         html.H1("Clustering",className="content"),
         html.H6('Choisissez une méthode de clustering :',className="content"),
         dcc.RadioItems(options = ['K-Means', 'Gaussian Mixtures', 'DBScan'], value='K-Means', id='controls-cluster',className="content"),
+        
         #Selon le choix de l'utilisateur, on lui demande la valeurs des paramètres de chaque méthode
         html.Div(id='kmeans-options',className="content", children=[
             html.Label('Nombre de Clusters pour K-Means', style={'margin-right': '10px'}),
@@ -44,7 +45,7 @@ layout= dbc.Container(
 
         html.Div(id='dbscan-nbre-min', children=[
             html.Label('Nombre minimum d\'échantillons pour DBScan',className="content", style={'margin-right': '10px'}),
-            dcc.Input(id='min-samples', type='text', value='5', style={'width': '60px'}),
+            dcc.Input(id='min-samples', type='text', value='5', style={'margin-bottom': '10px', 'width': '60px'}),
         ], style={'display': 'none', 'margin-bottom': '10px'}),  
 
         html.Button('Confirmer', id='valider_button',className='btn btn-info'),
