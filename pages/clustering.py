@@ -12,7 +12,8 @@ import scipy.stats as stats
 import matplotlib.pyplot as plt
 import plotly.tools as tls
 import seaborn as sns
-
+import matplotlib
+matplotlib.use('Agg')
 load_figure_template(["minty", "minty_dark"])
 
 df = pd.read_csv('./data/Top_200_univs.csv', delimiter=';')
@@ -48,9 +49,9 @@ layout= dbc.Container(
 
         html.Button('Confirmer', id='valider_button',className='btn btn-info'),
         
-        html.H3("Avec normalisation de données",className="content",style={'margin-top':'20px'}),
+        html.H3("Avec normalisation des données",className="content",style={'margin-top':'20px'}),
         dcc.Graph(figure={}, id='cluster-with-normalization'),
-        html.H3("Sans normalisation de données",className="content",style={'margin-top': '20px'}),
+        html.H3("Sans normalisation des données",className="content",style={'margin-top': '20px'}),
         dcc.Graph(figure={}, id='cluster-without-normalization')
         
     ]

@@ -28,7 +28,20 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWES
 layout = dbc.Container(
     [
         html.H1("Graphes de distribution",className="content"),
-        
+        html.Div(children='Sélectionnez l\'axe Y'),
+        dcc.RadioItems(
+            options = {
+                'No of student': 'Nombre des Étudiants',
+                'International Student': 'Étudiants Internationaux',
+                'Teaching Score': 'Score d\'Enseignement',
+                'Research Score': 'Score de Recherche'
+            },
+            value='No of student',
+            id='distribution-items'
+        ),
+        html.Br(),
+        dcc.Graph(figure={}, id='distribution-graph'),
+
         html.Div(
             home.color_mode_switch,style={'visibility':'hidden'}),
         html.H6("Distribution du nombre d'étudiants par rapport au score de recherche avec\
@@ -42,12 +55,20 @@ layout = dbc.Container(
     ]
 )
 
+#Ce callback prend en entrée la valeur choisi par l'utilisateur en axe Y et retourne la figure de la distribution
+@callback(
+    Output(component_id='distribution-graph', component_property='figure'),
+    Input(component_id='distribution-items', component_property='value')
+)
+
+def update_distribution_graph(col_chosen):
+    fig = px.histogram(df, x='University Rank', y=col_chosen)
+    return fig
 
 
 @callback(
     Output("graph", "figure"),
     Input("switch", "value"),
-    
 )
 
 def update_figure_template(switch_on):
@@ -70,7 +91,6 @@ def update_figure_template(switch_on):
 @callback(
     Output("graph2", "figure"),
     Input("switch", "value"),
-
 )
 
 def update_figure_template2(switch_on):
