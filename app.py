@@ -11,7 +11,7 @@ app = Dash(__name__,external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWESO
 navbar = dbc.NavbarSimple(
     children=[
         dbc.NavItem(dbc.NavLink("Home", href="/")),
-        dbc.NavItem(dbc.NavLink("Dataset", href="/data")),
+        dbc.NavItem(dbc.NavLink("Dataset", href="/dataset")),
         dbc.NavItem(dbc.NavLink("Distribution", href="/distribution")),
         dbc.NavItem(dbc.NavLink("Correlation", href="/correlation")),
         dbc.NavItem(dbc.NavLink("Clustering", href="/clustering")),
@@ -24,26 +24,28 @@ navbar = dbc.NavbarSimple(
 )
 
 # Footer
-gitlab_url = "https://forge.univ-lyon1.fr/p1908025/ad-projet-2024"
+project_url = "https://github.com/KangSolC/Dash-App"
 
 footer_style = {
     'border-top': '1px solid #ccc',
     'display': 'flex',
     'align-items': 'center',
     'justify-content': 'space-between',
-    'padding': '1rem'
+    'padding': '8px',
+    'color':' #176B87',
+    'background-color':'#FAF7F0'
 }
 
 footer= html.Footer(
     children=([
         html.Div([
             html.A([
-                "Accéder au projet Gitlab ",
-                html.I(className="fab fa-gitlab") # Icon Gitlab
+                "Accéder au projet",
+                html.I(className="fab fa-github") 
             ],
-            href=gitlab_url,
+            href=project_url,
             target="_blank",
-            style={'margin-right':'0'}
+            style={'margin-right':'0','color':' #176B87'}
             )
         ]),
 
@@ -72,7 +74,7 @@ app.layout = html.Div(
 def display_page(pathname):
     if pathname == "/":
         return home.layout
-    if pathname == "/data":
+    if pathname == "/dataset":
         return dataSet.layout
     elif pathname == "/distribution":
         return distribution.layout

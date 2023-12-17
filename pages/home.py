@@ -21,7 +21,7 @@ layout = dbc.Container([
                 children=[
                     html.H1("Les 200 meilleures universités du monde en 2023", style={'textAlign': 'center','font-weight':'bold','padding':'5px','color':'#176B87'}),
                     html.P("Ce projet a été réalisé par trois étudiantes du master TIW à l'UCBL, dans le cadre du module Analyse de Données en utilisant le framework DASH."),
-                    html.P("Explorons ensemble le jeu de données donnant le classement des universités en 2023 en utilisant les méthodes d'analyses de données !")
+                    html.P("Découvrons ensemble quelles sont les meilleures universités en 2023 selon le classement mondial, en utilisant les méthodes d'analyse de données !")
 
                 ])
             ],
@@ -53,9 +53,9 @@ layout = dbc.Container([
                 children=[
                     dcc.Markdown('''
                     _**Nous pouvons voir les analyses suivantes :**_
-                    * L'onglet **Dataset** expose le jeu de données étudié.
-                    * L'onglet **Distribution** présente des graphes de distribution avec différentes colonnes du jeu de données.
-                    * L'onglet **Correlation** met en avant les corrélations entre les attributs.
+                    * L'onglet **Dataset** expose le jeu de données étudié
+                    * L'onglet **Distribution** présente des graphes de distribution pour différents attributs du jeu de données
+                    * L'onglet **Correlation** met en avant les corrélations entre les attributs
                     * L'onglet **Clustering** montre comment les universités peuvent être regroupées en _clusters_ en fonction de leur score de recherche
                     ''',style={'padding':'5px','margin-top':'20px'})
                 ])

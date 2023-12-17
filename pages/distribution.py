@@ -28,7 +28,17 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.MINTY, dbc.icons.FONT_AWES
 layout = dbc.Container(
     [
         html.H1("Graphes de distribution",className="content"),
-        html.Div(children='Sélectionnez l\'axe Y:'),
+       
+
+        html.Div(
+            home.color_mode_switch,style={'visibility':'hidden'}),
+        
+        html.H6("Distribution du nombre des étudiants internationaux par rapport au rang de l'université avec\
+                 comme taille le nombre total des étudiants ",className="content"),
+        dcc.Graph(id="graph2", className="border"),
+        
+        html.Br(),
+          html.Div(children='Sélectionnez l\'axe Y:',className="content",style={'margin-top':'10px'}),
         dcc.RadioItems(
             options = {
                 'No of student': 'Nombre des Étudiants',
@@ -37,21 +47,15 @@ layout = dbc.Container(
                 'Research Score': 'Score de Recherche'
             },
             value='No of student',
-            id='distribution-items'
-        ),
+            id='distribution-items',
+            className="content"
+        ),dcc.Graph(figure={}, id='distribution-graph'),
         html.Br(),
-        dcc.Graph(figure={}, id='distribution-graph'),
-
-        html.Div(
-            home.color_mode_switch,style={'visibility':'hidden'}),
-        html.H6("Distribution du nombre d'étudiants par rapport au score de recherche avec\
-                 comme taille le nombre d'étudiants internationaux",className="content",style={'margin-top':'-20px'}),
+       html.H6("Distribution du nombre des étudiants par rapport au score de recherche avec\
+                 comme taille le nombre des étudiants internationaux",className="content",style={'margin-top':'-20px'}),
 
         dcc.Graph(id="graph", className="border"),
-        html.Br(),
-        html.H6("Distribution du nombre d'étudiants internationaux par rapport au rang de l'université avec\
-                 comme taille le nombre total d'étudiants ",className="content"),
-        dcc.Graph(id="graph2", className="border"),
+       
     ]
 )
 

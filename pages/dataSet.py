@@ -16,8 +16,7 @@ layout= dbc.Container(
         html.H1("Jeu de données",className="content"),
         dcc.Markdown(
             '''
-           
-            Voici notre jeu de données après l'avoir nettoyé et traité de notre part, provenant du jeu de données **[source](https://www.kaggle.com/datasets/alitaqi000/world-university-rankings-2023)** :
+           Suite aux traitements que nous avons effectués sur **[la source](https://www.kaggle.com/datasets/alitaqi000/world-university-rankings-2023)**, voici le jeu de données résultant :
             ''',
             className="content",
            
